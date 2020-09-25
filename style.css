@@ -1,4 +1,7 @@
 header{
-    background-color: blue;
-    color: red;
+    background-color: pink;
+    color: #282828;
 }
+
+/* selector desendente
+body header div nav ul li a {} */

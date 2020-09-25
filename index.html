@@ -8,64 +8,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="./assets/images/logo.png" alt="Logo">
             </figure>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li>
-                        <a href="./book/book.html">Portafolio</a>
+                        <a class="link" href="./book/book.html">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#experience">Experiencia</a>
+                        <a class="link" href="#experience">Experiencia</a>
                     </li>
                     <li>
-                        <a href="#contact">Trabajemos juntos</a>
+                        <a class="link" href="#contact">Trabajemos juntos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             Hola! Soy <strong> Alex</strong> Diseñador UX/UI
         </h1>
         <img src="./assets/images/hero.png" width="100%">
     </section>
-    <section id="book">
+    <section id="book" class="book">
         <h2>Portafolio (Proyectos destacados)</h2>
-        <article>
-            <h3>Mockup Mobile Pokemon</h3>
-            <h6>Adobe XD</h6>
-            <p><small><strong>Fecha:</strong> 05/04/2020</small></p>
-            <p><small><strong>Ver en:</strong> Behance</small></p>
-            <p>En este proyecto utilice conocimientos de UX/UI para la elaboracion del prototipo, el cual fue diseñado con la herramienta de Adobe XD</p>
-            <img src="./assets/images/pokemon.png" width="500px">
-        </article>
-    </section>
-    <section id="experience">
-        <h2>Experiencia</h2>
-        <article>
-            <figure>
-                <img src="./assets/images/streaming.png" width="500px">
+        <article class="project">
+            <h3 class="project__title">Mockup Mobile Pokemon</h3>
+            <h6 class="project__course">Adobe XD</h6>
+            <p class="project__date"><small><strong>Fecha:</strong> 05/04/2020</small></p>
+            <p class="project__url"><small><strong>Ver en:</strong> Behance</small></p>
+            <p class="project__description">En este proyecto utilice conocimientos de UX/UI para la elaboracion del prototipo, el cual fue diseñado con la herramienta de Adobe XD</p>
+            <figure class="project__imageContainer">
+                <img src="./assets/images/pokemon.png" width="500px">
             </figure>
-            <h3>alexayalauxd 2020</h3>
-            <p>Diseño de aplicacion mobile de streaming</p>
-            <!-- _blank - para que abra el enlace en otra pestaña -->
-            <a href="https://www.behance.net/gallery/96596277/Steaming-App-UXUI-Design" target="_blank">Ver mas</a>
         </article>
     </section>
-    <section id="contact">
-        <form action="/suscipcion/">
-            <h3>Trabajemos juntos</h3>
-            <label for="email">Email:</label>
+    <section id="experience" class="experience">
+        <h2>Experiencia</h2>
+        <article class="event">
+            <figure class="event__imageContainer">
+                <img class="event__image" src="./assets/images/streaming.png" width="500px">
+            </figure>
+            <h3 class="event_title">alexayalauxd 2020</h3>
+            <p class="event_description">Diseño de aplicacion mobile de streaming</p>
+            <!-- _blank - para que abra el enlace en otra pestaña -->
+            <a class="event_url" href="https://www.behance.net/gallery/96596277/Steaming-App-UXUI-Design" target="_blank">Ver mas</a>
+        </article>
+    </section>
+    <section id="contact" class="contact">
+        <form class="form__email" action="/suscipcion/">
+            <h3 class="form__title">Trabajemos juntos</h3>
+            <label class="form__box" for="email">Email:</label>
             <!-- datetime - para que se muestren las opciones usadas anteiormente -->
             <input type="datetime" placeholder="e-mail" id="email">
-            <button>Enviar</button>
+            <button class="form__button">Enviar</button>
         </form>
     </section>
-    <footer>Footer</footer>
+    <footer class="footer">Footer</footer>
 </body>
 </html>
