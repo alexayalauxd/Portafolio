@@ -15,13 +15,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Primer seccion</a>
+                        <a href="./book/book.html">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#">Segunda seccion</a>
+                        <a href="#experience">Experiencia</a>
                     </li>
                     <li>
-                        <a href="#">Tercer seccion</a>
+                        <a href="#contact">Trabajemos juntos</a>
                     </li>
                 </ul>
             </nav>
@@ -33,7 +33,7 @@
         </h1>
         <img src="./assets/images/hero.png" width="100%">
     </section>
-    <section>
+    <section id="book">
         <h2>Portafolio (Proyectos destacados)</h2>
         <article>
             <h3>Mockup Mobile Pokemon</h3>
@@ -44,21 +44,23 @@
             <img src="./assets/images/pokemon.png" width="500px">
         </article>
     </section>
-    <section>
-        <h2>Mas sobre mi experiencia</h2>
+    <section id="experience">
+        <h2>Experiencia</h2>
         <article>
             <figure>
                 <img src="./assets/images/streaming.png" width="500px">
             </figure>
             <h3>alexayalauxd 2020</h3>
             <p>Diseño de aplicacion mobile de streaming</p>
-            <a href="#">Ver mas</a>
+            <!-- _blank - para que abra el enlace en otra pestaña -->
+            <a href="https://www.behance.net/gallery/96596277/Steaming-App-UXUI-Design" target="_blank">Ver mas</a>
         </article>
     </section>
-    <section>
+    <section id="contact">
         <form action="/suscipcion/">
-            <h3>¿Creamos algo juntos?</h3>
+            <h3>Trabajemos juntos</h3>
             <label for="email">Email:</label>
+            <!-- datetime - para que se muestren las opciones usadas anteiormente -->
             <input type="datetime" placeholder="e-mail" id="email">
             <button>Enviar</button>
         </form>
