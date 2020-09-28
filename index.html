@@ -9,39 +9,51 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <figure class="logo">
-                <img src="./assets/images/logo.png" alt="Logo">
-            </figure>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a class="link" href="./book/book.html">Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#experience">Experiencia</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contact">Trabajemos juntos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <figure class="logo">
+            <img style="height: 40px;" src="./assets/images/logo.png" alt="Logo">
+        </figure>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a class="link" href="./book/book.html">Portafolio</a>
+                </li>
+                <li>
+                    <a class="link" href="#experience">Experiencia</a>
+                </li>
+                <li>
+                    <a class="link" href="#contact">Trabajemos juntos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section class="hero">
         <h1>
             Hola! Soy <strong> Alex</strong> <br> Diseñador UX/UI
         </h1>
-        <img src="./assets/images/hero.png" width="100%">
+        <!-- <img src="./assets/images/hero.png" width="100%"> -->
     </section>
     <section id="book" class="book">
         <h2>Portafolio (Proyectos destacados)</h2>
         <article class="project">
-            <h3 class="project__title">Mockup Mobile Pokemon</h3>
+            <div class="project__details">
+                <h3 class="project__title">Mockup Mobile Pokemon</h3>
             <h6 class="project__course">Adobe XD</h6>
             <p class="project__date"><small><strong>Fecha:</strong> 05/04/2020</small></p>
             <p class="project__url"><small><strong>Ver en:</strong> Behance</small></p>
             <p class="project__description">En este proyecto utilice conocimientos de UX/UI para la elaboracion del prototipo, el cual fue diseñado con la herramienta de Adobe XD</p>
+            </div>
+            <figure class="project__imageContainer">
+                <img src="./assets/images/pokemon.png" width="500px">
+            </figure>
+        </article>
+        <article class="project">
+            <div class="project__details">
+                <h3 class="project__title">Mockup Mobile Pokemon</h3>
+            <h6 class="project__course">Adobe XD</h6>
+            <p class="project__date"><small><strong>Fecha:</strong> 05/04/2020</small></p>
+            <p class="project__url"><small><strong>Ver en:</strong> Behance</small></p>
+            <p class="project__description">En este proyecto utilice conocimientos de UX/UI para la elaboracion del prototipo, el cual fue diseñado con la herramienta de Adobe XD</p>
+            </div>
             <figure class="project__imageContainer">
                 <img src="./assets/images/pokemon.png" width="500px">
             </figure>
@@ -68,6 +80,13 @@
             <button class="form__button">Enviar</button>
         </form>
     </section>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+        <div>
+            <p>Curso de desarrollo web 2020 <img src="./assets/images/logo.png" style="width: 25px;" alt=""></p>
+        </div>
+        <div> 
+            <p>Design whit <3 by <a href="https://www.behance.net/alexayalauxd">@alexayalauxd</a></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,18 +1,114 @@
-/* selector desendente
-body header div nav ul li a {} */
+/* Verde = #008080
+negro = #101010
+grisObs = #282828
+grisCla = #f6f6f6
+blanco = fcfcfc */
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
 }
-header{
-    background-color: pink;
-    color: #282828;
-}
-
 h1{
     /* Recomendacion para una mejor lectura */
     letter-spacing: -.2px;
     line-height: 1.5em;
     font-size: 40px;
+    color: #fcfcfc;
+    /* margin: 100px 150px 70px 30px; */
     /* text-transform: uppercase; */
+}
+h1 strong{
+    color: 	#008080;
+}
+
+ul, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+/* ===== Header ===== */
+.header{
+    background-color: #282828;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.menu{
+    height: inherit;
+}
+.header ul{
+    display: flex;
+    height: inherit;
+}
+.header ul li{
+    height: inherit;
+}
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 8px;
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+/* ===== Hero ===== */
+.hero{
+    height: 200px;
+    background-image: url('./assets/images/hero.png');
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.hero h1{
+    color: #282828;
+    justify-content: flex-end;
+}
+
+/* ===== Book ===== */
+.book{
+    background-color: #f6f6f6;
+}
+.project{
+    border-radius: 12px;
+    border: grey solid 1px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fcfcfc;
+}
+.project__details{
+    width: 500px;
+}
+.project__imageContainer{
+    width: 500px;
+}
+
+/* ===== Footer ===== */
+.footer{
+    background-color: #282828;
+    color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: #fcfcfc;
+    text-decoration: none;
 }
