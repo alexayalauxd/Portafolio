@@ -1,7 +1,7 @@
-/* Verde = #008080
+/* azul = #1da0f1
+azul2 = #1da0f144
 negro = #101010
-grisObs = #282828
-grisCla = #f6f6f6
+gris = #282828
 blanco = fcfcfc */
 
 body{
@@ -16,11 +16,11 @@ h1{
     color: #fcfcfc;
 }
 h1 strong{
-    color: 	#008080;
+    color: 	#1da0f1;
 }
 h2{
     margin: 10px;
-    color: 	#008080;
+    color: 	#1da0f1;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 24px;
@@ -81,7 +81,7 @@ figure{
 
 /* ===== Book ===== */
 .book{
-    background-color: #f6f6f6;
+    background-color: #1da0f144;
     padding: 20px;
 }
 .project{
@@ -130,9 +130,9 @@ figure{
 }
 .event{
     border-radius: 8px;
-    margin: 10px;
-    width: 480px;
-    background-color: teal;
+    margin: 1%;
+    width: 48%;
+    background-color: #1da0f144;
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -148,8 +148,8 @@ figure{
 .event__url{
     text-decoration: none;
     border-radius: 4px;
-    color: #008080;
-    border: #008080 1px solid;
+    color: #1da0f1;
+    border: #1da0f1 1px solid;
     padding: 10px 30px;
 }
 .event__description{
@@ -291,11 +291,23 @@ figure{
     .project__description{
         margin-bottom: 2em;
     }
+
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px){
     .project__details{
         font-size: 12px;
+    }
+
+    .event__detail{
+        margin: -3em .5em .5em;
     }
 }
 
