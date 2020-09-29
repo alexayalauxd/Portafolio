@@ -105,10 +105,10 @@ figure{
     margin: 10px 0;
 }
 .project__details{
-    width: 500px;
+    width: 50%;
 }
 .project__imageContainer{
-    width: 500px;
+    width: 50%;
 }
 .project__description{
     font-size: 18px ;
@@ -117,6 +117,10 @@ figure{
     text-decoration: none;
     color: #282828;
 }
+.project__imageContainer img{
+    max-width: 100%;
+}
+
 
 
 /* ===== Experience ===== */
@@ -264,10 +268,35 @@ figure{
     .header .logo{
         text-align: center;
     }
+
+    .project{
+        display: block;
+    }
+    .project__imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project__details{
+        width: auto;
+        font-size: 10px;
+    }
+    .project__title{
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .project__url, .project__course, .project__date, .project__description{
+        font-size: 1em;
+        margin: .5em 0;
+    }
+    .project__description{
+        margin-bottom: 2em;
+    }
 }
 
 @media screen and (max-width: 480px){
-    
+    .project__details{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px){
