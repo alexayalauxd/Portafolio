@@ -76,8 +76,24 @@ figure{
     background-position-x:50%;
     background-position-y:50%;
     flex-wrap: wrap;
+    position: relative;
 }
 
+.hero img{
+    z-index: 10;
+}
+.hero h1 span{
+    color: #1da0f1;
+}
+
+.title{
+    margin: 0;
+    color: #282828;
+    position: absolute;
+    top: 25%;
+    right: 1em;
+    3
+}
 
 /* ===== Book ===== */
 .book{
@@ -243,6 +259,24 @@ figure{
     flex-wrap: inherit;
 }
 
+/* ===== FontAwesome ===== */
+.burger__menu{
+    height: 40px;
+    width: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #28282880;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 40;
+    right: 1em;
+    top: 1em;
+}
+.burger__btn{
+    font-size: 25px;
+    color: white;
+}
 
 /* ===== Media Query Desktop ===== */
 
@@ -254,7 +288,7 @@ figure{
     .header{
         display: block;
         height: auto;
-        background-color: #1da0f1;
+        padding: 15px;
     }
     .header ul{
         display: block;
@@ -264,11 +298,36 @@ figure{
     }
     .header ul li a{
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
     .header .logo{
         text-align: center;
+        position: relative;
     }
-
+    .menu{
+        position: fixed;
+        background-color: #1da0f1f8;
+        z-index: 30;
+        top: 0;
+        left: 100vw;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active{
+        left: 0;
+    }
+    .burger__menu{
+        display: flex;
+    }
+    
     .project{
         display: block;
     }
@@ -299,6 +358,17 @@ figure{
     .event img{
         width: 100%;
     }
+    .wrapper{
+        padding: 0 1em;
+    }
+
+    .hero{
+        height: 120px;
+        /* position: relative; */
+    }
+    .title{
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -309,8 +379,43 @@ figure{
     .event__detail{
         margin: -3em .5em .5em;
     }
+
+    .contact{
+        height: auto;
+        padding: 1em;
+        text-align: center;
+        display: block;
+    }
+
+    .form__email button{
+        margin: 1em auto;
+        font-size: 16px;
+    }
+    .form__title{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        border: 1px solid transparent;
+        text-align: center;
+    }
+
+    .hero{
+        height: 100px;
+        /* position: relative; */
+    }
+    .title{
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 320px){
-
+    .hero{
+        height: 80px;
+        /* position: relative; */
+    }
+    .title{
+        font-size: 1em;
+    }
 }
