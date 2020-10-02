@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <div class="burger__menu">
+    <div class="burger__menu" id="burger-menu">
         <span class="fas fa-bars burger__btn"></span>
     </div>
 
@@ -18,7 +18,7 @@
             <figure class="logo">
                 <img style="height: 40px;" src="./assets/images/logo.png" alt="Logo">
             </figure>
-            <nav class="menu is-active">
+            <nav class="menu">
                 <ul>
                     <li>
                         <a class="link" href="./book/book.html">Portafolio</a>
@@ -151,7 +151,34 @@
             </div>
         </div>
     </footer>
+    <script>
+        console.log('hola mundo');
 
+        const mobile = window.matchMedia('screen and (max-width: 768px');
 
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+
+        mobile.addListener(validation);
+
+        function validation (event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow)
+            } else {
+                burgerButton.removeEventListener('click', hideShow)
+            }
+        }
+
+        burgerButton.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {  
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+        }
+
+    </script>
 </body>
 </html>
