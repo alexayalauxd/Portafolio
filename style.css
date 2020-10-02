@@ -281,7 +281,9 @@ figure{
 /* ===== Media Query Desktop ===== */
 
 @media screen and (max-width: 1024px){
-
+    .book{
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 767px){
