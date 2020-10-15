@@ -97,7 +97,7 @@ figure{
 
 /* ===== Book ===== */
 .book{
-    background-color: #1da0f144;
+    /* background-color: #1da0f144; */
     padding: 20px;
 }
 .project{
@@ -135,6 +135,7 @@ figure{
 }
 .project__imageContainer img{
     max-width: 100%;
+    border-radius: 8px;
 }
 
 
@@ -235,6 +236,8 @@ figure{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .footer img{
